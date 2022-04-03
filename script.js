@@ -1,7 +1,7 @@
 var newsData
 
 const fetchNews= async()=>{
-     await fetch('https://newsapi.org/v2/top-headlines?country=in&apiKey=d065882e6e554c9b98d9ace2b05d7a4d')
+     await fetch('http://newsapi.org/v2/top-headlines?country=in&apiKey=d065882e6e554c9b98d9ace2b05d7a4d')
     .then(res=>res.json())
     .then(data=>{
         console.log(data)
